@@ -1,13 +1,866 @@
+:root {
+  --red-color : red;
+  --blue-color : blue;
+  --light-text : #fff;
+  
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arvo', serif;
+  
+}
+.start-page {
+  top: 5%;
+  left: 38%;
+  position: absolute;
+  width: 400px;
+  height: 88vh;
+  border-radius: 12px;
+  background-image: linear-gradient(-90deg,rgb(145, 8, 145),rgb(226, 195, 226));
+  box-shadow: 3px 3px 7px 7px purple;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.start-page .start-btn {
+  font-family: 'Reggae One', cursive;
+  font-size: 27px;
+  text-shadow: 2px 1px 2px white;
+  background: none;
+  padding: 8px 18px;
+  border-radius: 9px;
+  outline: none;
+  border: 2.5px solid white;
+  color: white;
+  letter-spacing: 3px;
+}
+.start-page .start-btn:hover {
+  background-color:purple ;
+  transform: scale(0.93);
+  cursor: pointer;
+}
+.game-cont {
+  top: 7%;
+  left: 20%;
+  position: absolute;
+  width: 909px;
+  height: 83vh;
+  border-radius: 12px;
+  box-shadow: 3px 3px 7px 7px purple;
+  overflow: hidden;
+  background-color: white;
+  
+}
+.game-cont:-webkit-full-screen {
+  background-color: white;
+}
+.game-cont:fullscreen {
+  background-color: white;
+}
+.game-cont:-moz-full-screen {
+  background-color: white;
+}
+.game-cont:-ms-fullscreen {
+  background-color: white;
+}
+.game-header {
+  margin-top: 10px;
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  
+}
+.game-header .title-name {
+  color: white;
+  width: 90%;
+  margin: auto;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-shadow: 2px 1px 2px white;
+  letter-spacing: 1.6px;
+  word-spacing: 2px;
+  background-color: purple;
+  box-shadow: 3px 3px 2px 2px purple;
+  border-radius: 3px;
+  padding-top: 3px;
+}
+.game-header .headline {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 18px 10px;
+}
+.game-header .headline p {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  font-weight: 800;
+  color: blue;
+}
+.game-header .headline .player1-name {
+  margin-left: 60px;
+  color: blue;
+}
+.game-header .headline .player2-name {
+  margin-left: 88px;
+  color: red;
+}
+.game-header .headline img {
+  margin-left: 130px;
+  width: 60px;
+  height: 60px;
+ 
+}
+.game-body {
+  width: 100%;
+  display: flex;
+  
+}
+.left-box {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  border-right: 3px solid purple;
+  border-radius: 10px;
+}
+.right-box {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  border-left: 3px solid purple;
+  border-radius: 10px;
+}
+.left-box .display-area {
+  margin-left: 33px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.right-box .display-area {
+  margin-right: 33px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-box .card-left-box {
+  margin-top: 0;
+  margin-bottom: 37px;
+  width: 222px;
+  height: 4vh;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 4px 4px blue;
+ 
+}
+.left-box .card-left-box .card-left {
+  color: white;
+  font-size: 16px;
+  font-family: 'Reggae One', cursive;
+}
+.left-box .card-left-box .card-left span {
+  font-weight: 800;
+  margin-left: 7px;
+}
+.right-box .card-left-box {
+  margin-top: 0;
+  margin-bottom: 37px;
+  width: 222px;
+  height: 4vh;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 4px 4px red;
+}
+.right-box .card-left-box .card-left {
+  color: white;
+  font-size: 16px;
+  font-family: 'Reggae One', cursive;
+}
+.right-box .card-left-box .card-left span {
+  font-weight: 800;
+  margin-left: 7px;
+}
+.display-area .display-stat-box {
+  
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-box .display-area .display-stat-box  {
+  width: 188px;
+  height: 3.7vh;
+  font-size: 14px;
+  font-family: 'Reggae One', cursive;
+  font-weight: 600;
+  color: blue;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 4px 1px blue;
+  /*background-color: rgb(190, 190, 255);*/
+  background-image: linear-gradient(90deg,rgb(190, 190, 255),white);
+  border-radius: 7px;
+  
+}
+.right-box .display-area .display-stat-box  {
+  font-size: 14px;
+  color: red;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 188px;
+  height: 3.7vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 1px 2px 4px 1px red;
+  /*background-color: rgb(255, 177, 177);*/
+  background-image: linear-gradient(90deg,rgb(255, 177, 177),white);
+  border-radius: 7px;
+  font-family: 'Reggae One', cursive;
+ 
+}
+.display-area .player-card {
+  
+  width: 95%;
+  margin: auto;
+  height: 42vh;
+  transition: all 0.3s ease-in;
+  border-radius: 20px;
+  
+  
+}
+.left-box .display-area .player-card{
+  box-shadow: 1px 1px 3px 3px blue;
+}
+.right-box .display-area .player-card{
+  box-shadow: 1px 1px 3px 3px red;
+}
+.display-area .player-card-back {
+  width: 95%;
+  margin: auto;
+  height: 42vh;
+  background-image: linear-gradient(purple,white);
+  color: white;
+  transition: all 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 4px purple;
+ 
+}
+.player-card-back p {
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+  animation: sample 2s infinite alternate;
+}
+.display-area .player-card-back:hover,.display-area .player-card:hover {
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.player-card .card-header {
+  margin-top: 10px;
+  height: 37%;
+  display: flex;
+  align-items: center;
 }
+.player-card .card-header img {
+  margin-top: 5px;
+  margin-left: 10px;
+  width: 130px;
+  height: 130px;
+}
+.left-box .card-header h2 {
+  font-family: 'Reggae One', cursive;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-left: 6px;
+  
+}
+.right-box .card-header h2 {
+  font-family: 'Reggae One', cursive;
+  margin-left: 10px;
+  font-size: 18px;
+  
+}
+.left-box .player-card .stat-title {
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 4px 4px;
+  margin-top: 18px;
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+  background-color: blue;
+}
+.right-box .player-card .stat-title {
+  margin-top: 18px;
+  font-family: 'Press Start 2P', cursive;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 4px 4px;
+  margin-bottom: 0;
+  color: white;
+  text-align: center;
+  background-color: red;
+}
+
+.player-card .card-body {
+  width: 95%;
+  margin: auto;
+  height: 17vh;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  background-color: rgb(233, 231, 231);
+  border-radius: 20px;
+}
+
+.player-card .card-body .stat {
+  align-items: center;
+  margin: 1px 5px;
+  padding: 1px 8px;
+  color: darkolivegreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.stat .stat-name {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 0;
+  font-family: 'Reggae One', cursive;
+}
+.stat .stat-value {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 0;
+  font-family: 'Reggae One', cursive;
+}
+.stat-btn-lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.left-box .stat-btn-lists {
+  margin-right: 10px;
+}
+.right-box .stat-btn-lists {
+  margin-left: 10px;
+}
+
+.left-box .stat-btn-lists .stat-btn {
+  margin-top: 1px;
+  background-color: blue;
+  color: #fff;
+  padding: 4px 8px;
+  outline: none;
+
+}
+.left-box .stat-btn-lists .stat-btn:hover {
+  cursor: pointer;
+  background-color: rgb(17, 17, 150);
+}
+.right-box .stat-btn-lists .stat-btn {
+  margin-top: 1px;
+  background-color: red;
+  color: #fff;
+  padding: 4px 8px;
+  outline: none;
+ 
+}
+.result-box {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(purple,white);
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 4px purple;
+  height: 45vh;
+}
+.result-box .fa-trophy {
+  color: gold;
+  font-size: 90px;
+  font-weight: 600;
+  animation: anime 2s infinite alternate;
+ 
+}
+.result-box .fa-frown {
+  color: yellow;
+  font-size: 90px;
+  font-weight: 600;
+  animation: anime 2s infinite alternate;
+  
+}
+.restart-btn-box {
+  margin-top: 33px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.restart-btn {
+  font-family: 'Reggae One', cursive;
+  font-size: 15px;
+  padding: 6px 8px;
+  border-radius: 3px;
+  outline: none;
+  background-image: linear-gradient(90deg,purple,rgb(224, 127, 224));
+  color: white;
+}
+.restart-btn:hover {
+  background-image: linear-gradient(90deg,purple,purple);
+  cursor: pointer;
+  transform: scale(0.93);
+}
+@keyframes anime {
+  0%{
+    transform: scale(0.92);
+  }
+  100%{
+    transform: scale(1.33);
+  }
+}
+@keyframes sample {
+  0%{
+    transform: scale(0.93);
+  }
+  100%{
+    transform: scale(1.4);
+  }
+}
+@media screen and (max-width : 728px) {
+  .start-page {
+    top: .5%;
+    left: .5%;
+    position: absolute;
+    width: 98%;
+    height: 99vh;
+    border-radius: 7px;
+    background-image: linear-gradient(-90deg,rgb(145, 8, 145),rgb(226, 195, 226));
+    box-shadow: 2px 2px 4px 3px purple;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .start-page .start-btn {
+    font-family: 'Reggae One', cursive;
+    font-size: 21px;
+    text-shadow: 2px 1px 2px white;
+    background: none;
+    padding: 6px 14px;
+    border-radius: 7px;
+    outline: none;
+    border: 2px solid white;
+    color: white;
+    letter-spacing: 2px;
+  }
+  .start-page .start-btn:hover {
+    background-color:purple ;
+    transform: scale(0.93);
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width : 728px) and (orientation : landscape) {
+  
+  .game-cont {
+    position: absolute;
+    top: .5%;
+    left: .4%;
+    width: 99%;
+    height: 99%;
+    margin: auto;
+    border-radius: 0;
+    box-shadow: 1px 1px 2px 2px purple;
+    overflow: hidden;
+    border-radius: 7px;
+    background-color: white;
+  }
+  .game-header {
+    margin-top: 5px;
+    width: 100%;
+    height: 18vh;
+    overflow: hidden;
+  }
+  .game-header .title-name {
+    color: white;
+    width: 80%;
+    margin: auto;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0;
+    text-shadow: 2px 1px 2px white;
+    letter-spacing: 1.2px;
+    word-spacing: 1.4px;
+    background-color: purple;
+    box-shadow: 3px 3px 2px 2px purple;
+    border-radius: 3px;
+  }
+  .game-header .headline {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 8px 6px;
+  }
+  .game-header .headline p {
+    margin-top: 7px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    font-weight: 800;
+    color: blue;
+  }
+  .game-header .headline .player1-name {
+    margin-left: 50px;
+    color: blue;
+  }
+  .game-header .headline .player2-name {
+    
+    margin-left: 55px;
+    color: red;
+  }
+  .game-header .headline img {
+    margin-left: 72px;
+    width: 49px;
+    height: 33px;
+  }
+  .game-body {
+    margin-top: 7px;
+    width: 100%;
+    display: flex;
+  }
+  .left-box {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    border-right: 2px solid purple;
+    border-radius: 8px;
+  }
+  .right-box {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    border-left: 2px solid purple;
+    border-radius: 8px;
+  }
+  .left-box .display-area {
+    margin-left: 5px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .right-box .display-area {
+    margin-right: 5px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .left-box .card-left-box {
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 155px;
+    height: 3.5vh;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 3px 3px blue;
+   
+  }
+  .left-box .card-left-box .card-left {
+    color: white;
+    font-size: 13px;
+    font-family: 'Reggae One', cursive;
+  }
+  .left-box .card-left-box .card-left span {
+    font-weight: 800;
+    margin-left: 5px;
+  }
+  .right-box .card-left-box {
+    margin-top: 0;
+    margin-bottom: 20px;
+    width: 155px;
+    height: 3.5vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 3px 3px red;
+  }
+  .right-box .card-left-box .card-left {
+    color: white;
+    font-size: 13px;
+    font-family: 'Reggae One', cursive;
+  }
+  .right-box .card-left-box .card-left span {
+    font-weight: 800;
+    margin-left: 5px;
+  }
+  .display-area .display-stat-box {
+    margin-bottom: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left-box .display-area .display-stat-box  {
+    width: 144px;
+    height: 4.8vh;
+    font-size: 11px;
+    font-family: 'Reggae One', cursive;
+    font-weight: 600;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px 1px blue;
+    background-image: linear-gradient(90deg,rgb(190, 190, 255),white);
+    border-radius: 5px;
+    
+  }
+  .right-box .display-area .display-stat-box  {
+    font-size: 11px;
+    color: red;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 144px;
+    height: 4.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 2px 3px 1px red;
+    background-image: linear-gradient(90deg,rgb(255, 177, 177),white);
+    border-radius: 5px;
+    font-family: 'Reggae One', cursive;
+   
+  }
+  .display-area .player-card {
+    
+    width: 95%;
+    margin: auto;
+    height: 55vh;
+    transition: all 0.3s ease-in;
+    border-radius: 11px;
+    
+    
+  }
+  .left-box .display-area .player-card{
+    box-shadow: 1px 1px 2px 2px blue;
+  }
+  .right-box .display-area .player-card{
+    box-shadow: 1px 1px 2px 2px red;
+  }
+  .display-area .player-card-back {
+    width: 95%;
+    margin: auto;
+    height: 55vh;
+    background-image: linear-gradient(purple,white);
+    color: white;
+    transition: all 0.3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 11px;
+    box-shadow: 1px 2px 3px 3px purple;
+   
+  }
+  .player-card-back p {
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    animation: sample 2s infinite alternate;
+  }
+  .display-area .player-card-back:hover,.display-area .player-card:hover {
+    cursor: pointer;
+  }
+  
+  .player-card .card-header {
+    margin-top: 3px;
+    height: 37%;
+    display: flex;
+    align-items: center;
+  }
+  .player-card .card-header img {
+    margin-top: 13px;
+    margin-left: 5px;
+    width: 80px;
+    height: 80px;
+  }
+  .left-box .card-header h2 {
+    font-family: 'Reggae One', cursive;
+    font-size: 13px;
+    width: 55%;
+    text-align: center;
+    
+    
+  }
+  .right-box .card-header h2 {
+    font-family: 'Reggae One', cursive;
+    font-size: 13px;
+    width: 55%;
+    text-align: center;
+    
+  }
+  .left-box .player-card .stat-title {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    font-size: 10px;
+    padding: 2px 2px;
+    margin-top: 17px;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+    background-color: blue;
+  }
+  .right-box .player-card .stat-title {
+    margin-top: 17px;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 400;
+    font-size: 10px;
+    padding: 2px 2px;
+    margin-bottom: 0;
+    color: white;
+    text-align: center;
+    background-color: red;
+  }
+  
+  .player-card .card-body {
+    width: 95%;
+    margin: auto;
+    height: 21vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    background-color: rgb(233, 231, 231);
+    border-radius: 10px;
+  }
+  
+  .player-card .card-body .stat {
+    align-items: center;
+    margin: 0 1px;
+  
+    color: darkolivegreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  .stat .stat-name {
+    margin-top: 3px;
+    font-size: 9px;
+    
+    margin-bottom: 0;
+    font-family: 'Reggae One', cursive;
+  }
+  .stat .stat-value {
+    font-size: 9px;
+    margin-top: 3px;
+   
+    font-family: 'Reggae One', cursive;
+    margin-bottom: 0;
+  }
+  .left-box .stat-btn-lists {
+    margin-right: 10px;
+  }
+  .right-box .stat-btn-lists {
+    margin-left: 10px;
+  }
+  
+  .left-box .stat-btn-lists .stat-btn {
+    margin-top: 1px;
+    font-size: 12px;
+    background-color: blue;
+    color: #fff;
+    padding: 3px 5px;
+    outline: none;
+  
+  }
+  .left-box .stat-btn-lists .stat-btn:hover {
+    cursor: pointer;
+    background-color: rgb(17, 17, 150);
+  }
+  .right-box .stat-btn-lists .stat-btn {
+    margin-top: 1px;
+    font-size: 12px;
+    background-color: red;
+    color: #fff;
+    padding: 3px 5px;
+    outline: none;
+   
+  }
+  .result-box {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(purple,white);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px purple;
+  height: 58vh;
+}
+.result-box .fa-trophy {
+  color: gold;
+  font-size: 66px;
+  font-weight: 600;
+  animation: anime 2s infinite alternate;
+}
+.result-box .fa-frown {
+  color: gold;
+  font-size: 66px;
+  font-weight: 600;
+  animation: anime 2s infinite alternate;
+}
+.restart-btn-box {
+  margin-top: 17px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.restart-btn {
+  font-family: 'Reggae One', cursive;
+  font-size: 12px;
+  padding: 3px 5px;
+  border-radius: 3px;
+  outline: none;
+  background-image: linear-gradient(90deg,purple,rgb(224, 127, 224));
+  color: white;
+}
+  
+}
+

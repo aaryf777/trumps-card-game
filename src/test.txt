@@ -1,0 +1,109 @@
+name={statList[0].name}
+                            dp={statList[0].profile}
+                            match={statList[0].match}
+                            inning={statList[0].inning}
+                            runs={statList[0].runs}
+                            hs={statList[0]['highest-score']}
+                            no={statList[0]['not-out']}
+                            hundred={statList[0].hundred}
+                            fifty={statList[0].fifty}
+                            binning={statList[0].binning}
+                            balls={statList[0].balls}
+                            wicket={statList[0].wicket}
+
+                            name={statList[0].name}
+                            dp={statList[0].profile}
+                            match={statList[0].match}
+                            inning={statList[0].inning}
+                            runs={statList[0].runs}
+                            hs={statList[0]['highest-score']}
+                            no={statList[0]['not-out']}
+                            hundred={statList[0].hundred}
+                            fifty={statList[0].fifty}
+                            binning={statList[0].binning}
+                            balls={statList[0].balls}
+                            wicket={statList[0].wicket}
+
+
+
+                            //{blueStat.name} : {blueStat.val}
+//{blueStat.name} : {blueStat.val}
+// switch (val) {
+//     case 'match':
+//         rstatVal = redarr[0].match;
+//         bstatVal = redarr[0].match
+//         break;
+//     case 'runs':
+//         rstatVal = redarr[0].runs;
+//         bstatVal = redarr[0].runs
+//         break;
+//     case 'highest-score':
+//         rstatVal = redarr[0]['highest-score'];
+//         bstatVal = redarr[0]['highest-score']
+//         break;
+//     case 'not-out':
+//         rstatVal = redarr[0]['not-out'];
+//         bstatVal = redarr[0]['not-out']
+//         break;
+//     case 'hundred':
+//         rstatVal = redarr[0].hundred;
+//         bstatVal = redarr[0].hundred
+//         break;
+//     case 'fifty':
+//         rstatVal = redarr[0].fifty;
+//         bstatVal = redarr[0].fifty
+//         break;
+//     case 'balls':
+//         rstatVal = redarr[0].balls;
+//         bstatVal = redarr[0].balls
+//         break;
+//     case 'wicket':
+//         rstatVal = redarr[0].wicket;
+//         bstatVal = redarr[0].wicket
+//         break;
+
+//     default:
+//         break;
+// }
+// setRedStat(rstatVal);
+// setBlueStat(bstatVal);
+
+// switch (val) {
+//     case 'match':
+//         rstatVal = bluearr[0].match;
+//         bstatVal = bluearr[0].match
+//         break;
+//     case 'runs':
+//         rstatVal = bluearr[0].runs;
+//         bstatVal = bluearr[0].runs
+//         break;
+//     case 'highest-score':
+//         rstatVal = bluearr[0]['highest-score'];
+//         bstatVal = bluearr[0]['highest-score']
+//         break;
+//     case 'not-out':
+//         rstatVal = bluearr[0]['not-out'];
+//         bstatVal = bluearr[0]['not-out']
+//         break;
+//     case 'hundred':
+//         rstatVal = bluearr[0].hundred;
+//         bstatVal = bluearr[0].hundred
+//         break;
+//     case 'fifty':
+//         rstatVal = bluearr[0].fifty;
+//         bstatVal = bluearr[0].fifty
+//         break;
+//     case 'balls':
+//         rstatVal = bluearr[0].balls;
+//         bstatVal = bluearr[0].balls
+//         break;
+//     case 'wicket':
+//         rstatVal = bluearr[0].wicket;
+//         bstatVal = bluearr[0].wicket
+//         break;
+
+//     default:
+//         break;
+// }
+// setRedStat(rstatVal);
+// setBlueStat(bstatVal);
