@@ -484,6 +484,8 @@ body {
     transform: scale(0.93);
     cursor: pointer;
   }
+
+  
 }
 
 @media screen and (max-width : 728px) and (orientation : landscape) {
@@ -531,23 +533,22 @@ body {
   .game-header .headline p {
     margin-top: 7px;
     font-family: 'Press Start 2P', cursive;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 800;
-    color: blue;
   }
   .game-header .headline .player1-name {
-    margin-left: 50px;
+    margin-left: 44px;
     color: blue;
   }
   .game-header .headline .player2-name {
     
-    margin-left: 55px;
+    margin-left: 88px;
     color: red;
   }
   .game-header .headline img {
-    margin-left: 72px;
+    margin-left: 118px;
     width: 49px;
-    height: 33px;
+    height: 36px;
   }
   .game-body {
     margin-top: 7px;
@@ -802,9 +803,10 @@ body {
   
   .left-box .stat-btn-lists .stat-btn {
     margin-top: 1px;
-    font-size: 12px;
+    font-size: 12.5px;
     background-color: blue;
     color: #fff;
+    
     padding: 3px 5px;
     outline: none;
   
@@ -815,7 +817,7 @@ body {
   }
   .right-box .stat-btn-lists .stat-btn {
     margin-top: 1px;
-    font-size: 12px;
+    font-size: 12.5px;
     background-color: red;
     color: #fff;
     padding: 3px 5px;

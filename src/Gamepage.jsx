@@ -8,6 +8,7 @@ import statList, { shuffle } from './List';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import './index.css';
 import { FullScreen, useFullScreenHandle } from 'react-full-screen';
+import DeviceOrientation, {Orientation} from 'react-screen-orientation';
 let rPlayer = '';
 let bPlayer = '';
 let showBtn = 'none';
@@ -408,13 +409,17 @@ const Gamepage = () => {
         setstartPage('none');
         setgameOn('');
         handle.enter();
+        window.screen.orientation.lock('landscape');
+        
     }
     return (
         <>
             <div className='start-page' style={{ display: startPage }}>
                 <button className='start-btn' onClick={gameStart}>Start</button>
             </div>
+            
             <FullScreen handle = {handle}>
+            
                 <div className='game-cont' style={{ display: gameOn }}>
                     <div className='game-header'>
                         <h1 className='title-name'>TRUMPS CARD</h1>
@@ -524,6 +529,7 @@ const Gamepage = () => {
                         <button className='restart-btn' style={{ display: showBtn }} onClick={startAgain}>Play Again</button>
                     </div>
                 </div>
+               
             </FullScreen>
         </>
     )
