@@ -15,8 +15,8 @@ let showBtn = 'none';
 let rerend = 0;
 let bluearr;
 let redarr;
-const winner = "fas fa-trophy"
-const looser = "fas fa-frown"
+const winner = "WINNER"
+const looser = "LOOSER"
 
 
 const batting = ['match', 'runs', 'highest-score', 'hundred', 'fifty'];
@@ -462,7 +462,7 @@ const Gamepage = () => {
                                     </div>
                                     :
                                     <div className='result-box'>
-                                        <i className={bstatus}></i>
+                                        <p className= 'status'>{bstatus}</p>
                                     </div>
                             }
                             <div className='stat-btn-lists'>
@@ -518,7 +518,7 @@ const Gamepage = () => {
                                     </div>
                                     :
                                     <div className='result-box'>
-                                        <i className={rstatus}></i>
+                                        <p className = 'status'>{rstatus}</p>
                                     </div>
                             }
                         </div>

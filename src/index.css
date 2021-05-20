@@ -401,20 +401,16 @@ body {
   box-shadow: 2px 2px 4px 4px purple;
   height: 45vh;
 }
-.result-box .fa-trophy {
-  color: gold;
-  font-size: 90px;
-  font-weight: 600;
+.status {
+  color:purple;
+  font-size: 24px;
+  font-family: 'Reggae One', cursive;
+  font-weight: 800;
   animation: anime 2s infinite alternate;
- 
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px rgb(116, 5, 116);
 }
-.result-box .fa-frown {
-  color: yellow;
-  font-size: 90px;
-  font-weight: 600;
-  animation: anime 2s infinite alternate;
-  
-}
+
 .restart-btn-box {
   margin-top: 33px;
   width: 100%;
@@ -439,9 +435,11 @@ body {
 @keyframes anime {
   0%{
     transform: scale(0.92);
+    opacity : .6
   }
   100%{
     transform: scale(1.33);
+    opacity: 1;
   }
 }
 @keyframes sample {
@@ -542,11 +540,11 @@ body {
   }
   .game-header .headline .player2-name {
     
-    margin-left: 88px;
+    margin-left: 72px;
     color: red;
   }
   .game-header .headline img {
-    margin-left: 118px;
+    margin-left: 95px;
     width: 49px;
     height: 36px;
   }
@@ -806,7 +804,7 @@ body {
     font-size: 12.5px;
     background-color: blue;
     color: #fff;
-    
+
     padding: 3px 5px;
     outline: none;
   
@@ -835,18 +833,16 @@ body {
   box-shadow: 2px 2px 2px 2px purple;
   height: 58vh;
 }
-.result-box .fa-trophy {
-  color: gold;
-  font-size: 66px;
-  font-weight: 600;
+.status {
+  color: purple;
+  font-size: 22px;
+  font-weight: 800;
   animation: anime 2s infinite alternate;
+  font-family: 'Reggae One', cursive;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 1px rgb(116, 5, 116);
 }
-.result-box .fa-frown {
-  color: gold;
-  font-size: 66px;
-  font-weight: 600;
-  animation: anime 2s infinite alternate;
-}
+
 .restart-btn-box {
   margin-top: 17px;
   width: 100%;
